@@ -15,7 +15,7 @@ Huit donjons permettent d'observer l'effet de la disposition des salles et des p
 
 ![Comparaison des parcours DFS, BFS et A* sur le donjon 3](docs/images/parcours.png)
 
-*Visualisation ajoutée pour la présentation du dépôt, à partir de parcours réellement produits par le code original. L'application s'exécute en console ; cette image n'est pas une capture d'interface.*
+*Exemple de parcours produits par le programme en console.*
 
 ## ✨ Fonctionnalités
 
@@ -67,7 +67,7 @@ Exemples obtenus lors de la vérification du dépôt avec **OpenJDK 21**, à par
 | 7 | 199 / 369 | 57 / 528 | 57 / 291 |
 | 8 | 74 / 96 | 32 / 108 | 32 / 108 |
 
-[Consulter les 24 résultats au format CSV](docs/resultats.csv).
+Le tableau ci-dessus illustre une exécution sous OpenJDK 21. Les mesures de notre rapport sont disponibles séparément : [Steps et temps pour les huit donjons (CSV)](docs/resultats.csv). Le CSV reprend les 24 couples algorithme/donjon du rapport, avec le temps total en millisecondes pour 10 000 résolutions ; ses valeurs peuvent différer de cette illustration.
 
 Sur ces huit donjons, les chemins de BFS et A* ont été vérifiés contre un calcul indépendant de distance minimale. Les 24 itinéraires rejoignent l'arrivée et leur conversion en directions a également été contrôlée.
 
@@ -90,7 +90,9 @@ Dans le binôme, je me suis principalement chargé de la **modélisation et de l
 - Conception du **donjon 7** pour enrichir les cas de comparaison.
 - Développement d'**A\*** et analyse des résultats **avec Célian**.
 
-Célian a principalement développé **DFS et BFS** et conçu le **donjon 8**. Cette répartition reprend celle de notre rapport de projet.
+- Participation à la mise au point de **DFS et BFS** : vérification des programmes et propositions de solutions, en appui au développement mené par Célian.
+
+Nous avons travaillé en entraide, avec des vérifications croisées et des échanges de solutions tout au long du projet.
 
 ## 🚀 Lancer le projet
 
@@ -119,8 +121,6 @@ java -cp out sae.Scenarios
 
 Lancer le programme depuis la racine est nécessaire pour qu'il retrouve `Donjon3.txt` à `Donjon8.txt`. Les huit scénarios se succèdent automatiquement. Le traitement peut prendre plusieurs dizaines de secondes ou davantage, car chaque résolution est répétée 10 000 fois.
 
-Les commandes et `sources.txt` ont été ajoutés pour faciliter l'utilisation du dépôt ; ils ne figuraient pas dans le rendu initial.
-
 ## 📁 Organisation
 
 ```text
@@ -140,26 +140,11 @@ sources.txt            # Liste des sources à compiler
 
 Projet réalisé en binôme en **BUT Informatique**, à partir d'un socle Java fourni pour la représentation des donjons et les scénarios. Les classes de graphe, les solveurs et la conversion ont été développés dans notre rendu ; le projet ne part donc pas entièrement de zéro.
 
-**Résultat : 18,5/20**, meilleure note du relevé d'évaluation fourni, obtenue par les deux membres du binôme.
-
-- [Rapport original : démarche, répartition du travail et analyse](docs/rapport.pdf)
-
-Le rapport est conservé tel que rendu. Pour interpréter ses chiffres de temps et de « Steps », se référer aux précisions de la section **Résultats & interprétation** ci-dessus.
+- [Rapport du projet : démarche et analyse](docs/rapport.pdf)
 
 <details>
 <summary>Consulter le sujet d'origine</summary>
 
 [Sujet détaillé du projet (PDF)](docs/sujet.pdf)
-
-</details>
-
-<details>
-<summary>Préparation du dépôt et fidélité au rendu</summary>
-
-Les **18 fichiers Java** et les **6 fichiers de donjons** sont conservés à l'identique, sans modification du code ni renommage des classes ou packages.
-
-Les ajouts de présentation sont ce README, `.gitignore`, `.gitattributes`, `sources.txt`, la visualisation et le CSV de vérification. Le rapport et le sujet ont été copiés sous des noms plus courts dans `docs/`.
-
-Les fichiers compilés (`bin/`), les réglages locaux d'Eclipse et les fichiers système (`.DS_Store`) ne sont pas publiés. Le relevé de notes des étudiants reste hors du dépôt. Le nom historique du package `sae` est conservé pour préserver le code original.
 
 </details>
