@@ -1,0 +1,8 @@
+# Preserve the original source and dungeon file bytes when checking out.
+src/** -text
+Donjon*.txt -text
+*.pdf binary
+*.png binary
+*.md text eol=lf
+sources.txt text eol=lf
+
