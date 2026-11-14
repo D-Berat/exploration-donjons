@@ -7,7 +7,7 @@
 
 **Trouver une sortie, puis comparer les chemins pour y arriver.**
 
-J'ai réalisé ce projet avec **Célian Gloro** pour comparer trois algorithmes de recherche de chemins : **DFS**, **BFS** et **A\***. Le programme transforme un donjon en graphe, recherche un itinéraire entre deux salles et traduit la solution en directions à suivre.
+J'ai réalisé ce projet avec **Célian GLORO** pour comparer trois algorithmes de recherche de chemins : **DFS**, **BFS** et **A\***. Le programme transforme un donjon en graphe, recherche un itinéraire entre deux salles et traduit la solution en directions à suivre.
 
 Huit donjons permettent d'observer l'effet de la disposition des salles et des passages sur le chemin obtenu et le nombre de sommets traités.
 
@@ -88,9 +88,9 @@ Dans le binôme, je me suis principalement chargé de la **modélisation et de l
 - Mise en place de l'interface **`Solver`** et de la structure commune **`SolverGeneric`**.
 - Reconstruction et conversion de la solution, avec **`GraphSoluce`** et **`Dungeon2Graph`**.
 - Conception du **donjon 7** pour enrichir les cas de comparaison.
-- Développement d'**A\*** et analyse des résultats **avec Célian**.
+- Développement d'**A\*** et analyse des résultats **avec Célian GLORO**.
 
-- Participation à la mise au point de **DFS et BFS** : vérification des programmes et propositions de solutions, en appui au développement mené par Célian.
+- Participation à la mise au point de **DFS et BFS** : vérification des programmes et propositions de solutions, en appui au développement mené par Célian GLORO.
 
 Nous avons travaillé en entraide, avec des vérifications croisées et des échanges de solutions tout au long du projet.
 
